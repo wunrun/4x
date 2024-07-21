@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  background-color: #fff;
+}
+/* 封面 */
+.hero-back {
+  width: 100%;
+  height: calc(100vh);
+  background: url(../images/第一背景.jpg) no-repeat 50% 50%;
+  background-image: url(../images/第一背景.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: cover;
+  position: relative;
+}
+.hero-back img {
+  width: 45%;
+  position: absolute;
+  top: 230px;
+  bottom: 0;
+  left: 0;
+  right: 50px;
+  margin: auto;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.c1000 {
+  width: 100%;
+  height: 115%;
+  left: 6px;
+  top: -138px;
+  position: absolute;
+  z-index: 6;
+}
+/* 顶部开始 */
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  background: #799f49;
+}
+.header{
+  height: 65px;
+}
+.header-middle{
+  width: 100%;
+  height: 65px;
+  /* border: 1px solid red; */
+}
+.header-middle ul a{
+  display: block;
+  float: left;
+  width: 300px;
+  height: 65px;
+  border: 0px solid red;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  color: #fff;
+}
+/* 第一部分 */
+#introduc{
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: #d1d476;
+}
+/* 第二部分 */
+#present{
+  width: 100%;
+  height: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: #799f48;
+}
+#present i{
+  font-size: 20px;
+}
+.text1{
+   text-align: center;
+   font-size: 20px;
+}
+/* 折线图 */
+.photo1{
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+.text2{
+  /* text-align: center; */
+  font-size: 20px;
+}
+/* 柱状图 */
+.photo2{
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+/* 第三部分 */
+#ta{
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: #678256;
+}
+.tata{
+ width: 1500px;
+ height: 630px;
+ border: 1px solid red;
+}
+.tatext{
+  width: 1500px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid slategray;
+  line-height: 35px;
+  background-color: #d1d476;
+}
+/* 第四部分 */
+#dense{
+  width: 100%;
+  height: 260px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: white;
+}
+.Ex{
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+.dir{
+  width: 60px;
+  height: 20px;
+  background-color: #d1d476;
+}
+/* 中国地图 */
+.map{
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+/* 工作压力 */
+.pressure{
+  width: 600px;
+  /* height: 600px; */
+  border: 0px solid red;
+}
+/* 工作福利待遇 */
+.aaa{
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+}
+/* 职责划分 */
+.bing{
+  margin-left: 50px;
+  width: 100px;
+  height: 20px;
+  border: 0px solid red;
+  text-align: center;
+  background-color: #d1d476;
+  border-radius: 5%;
+}
+/* 激励之力 */
+.Ex3 img{
+  display: block;
+  margin: 0 auto;
+}
+/* 个例 */
+.box  img {
+  width: 100%;
+  /* 垂直对齐方式 */
+  vertical-align: middle;
+}
+
+.box {
+  width: 1110px;
+  height: 247px;
+  margin: 20px auto;
+  /* background-color: pink; */
+}
+
+.box li {
+  /* 子绝父相 */
+  position: relative;
+  float: left;
+  width: 350px;
+  height: 247px;
+  margin-right: 30px;
+  /* 溢出隐藏 */
+  overflow: hidden;
+}
+
+.box li:last-child {
+  margin-right: 0;
+}
+
+.box .txt {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 350px;
+  height: auto;
+  padding: 20px 30px;
+  /* 默认情况下，定位的盒子：后来者居上
+      z-index:整数； 取值越大，显示顺序越靠上;z-index的默认值为0
+      注意：z-index要配合定位才生效
+      */
+  z-index: 1;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.box .txt h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+
+.box .txt h5 {
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.box .txt p {
+  color: #fff;
+  font-size: 14px;
+}
+.box .txt p .iconfont {
+  color: #c7000b;
+  /* 垂直对齐 */
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 
+1.准备字体图标:先引入样式表；调用类名
+2.渐变背景:书写盒子控制位置；hover显示
+3.图片缩放
+4.文字位移
+*/
+
+/* 渐变背景 */
+.box li a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 伪元素属性 */
+  content: '';
+  width: 350px;
+  height: 247px;
+  background-image: linear-gradient(transparent,
+          rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.box li:hover a::after {
+  opacity: 1;
+}
+
+/* 图片缩放 */
+.box li .pic img {
+  /* 过渡效果 */
+  /* 过渡配合hover使用,谁变化谁加过渡属性,所有在0.5s完成过渡属性 */
+  transition: all 0.5s;
+}
+
+.box li:hover .pic img {
+  /* 平面缩放 大于1放大，小于1缩小 */
+
+  transform: scale(1.2);
+}
+
+/* 文字效果:hover时向上移动 Y- -50px */
+.box li:hover .txt {
+  /* 使用transform实现元素空间位移效果 */
+  transform: translateY(-50px);
+}
+/* 第五部分 */
+#summarize{
+  width: 100%;
+  height: 1100px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: white;
+}
